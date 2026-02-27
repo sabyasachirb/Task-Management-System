@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<div
+    style="display: flex; flex-direction: column; gap: 10px; width: 50%; margin: auto; background-color: rgb(235, 239, 239); padding: 1.5rem; border-radius: 0.5rem">
+    <h2>Update Profile</h2>
+    {% load crispy_forms_tags %}
+    <form method="POST">
+        {% csrf_token %}
+        {{ form | crispy }}
+        <button type="submit" class="btn btn-info">Update</button>
+    </form>
+</div>
+
+{% endblock %}
