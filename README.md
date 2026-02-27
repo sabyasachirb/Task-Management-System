@@ -8,7 +8,7 @@ A Django-based **multi-user Task Management System** that allows users to create
 
 - 🔐 **User Authentication & Authorization**
   - User registration, login, logout
-  - Password change (with and without old password)
+  - Password change 
   - User-specific task access (no data leakage)
 
 - 📝 **Task Management**
